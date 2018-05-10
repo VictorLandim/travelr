@@ -1,0 +1,99 @@
+.container {
+    max-width: $container-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    padding-left: $row-padding-horizontal;
+    padding-right: $row-padding-horizontal;
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    color: $color-white;
+    font-size: 2rem;
+    text-align: center;
+
+    @include clearfix;
+
+    [class^='col-'] {
+        float: left;
+
+        background-color: $color-gray-dark;
+        padding: 2rem;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1 {
+        width: calc((100% - 5 * #{$gutter-horizontal}) / 6);
+    }
+
+    .col-2 {
+        width: calc(
+            (2 * (100% - 5 * #{$gutter-horizontal}) / 6) + #{$gutter-horizontal}
+        );
+    }
+
+    .col-3 {
+        width: calc(
+            (3 * (100% - 5 * #{$gutter-horizontal}) / 6) + 2 * #{$gutter-horizontal}
+        );
+    }
+
+    .col-4 {
+        width: calc(
+            (4 * (100% - 5 * #{$gutter-horizontal}) / 6) + 3 * #{$gutter-horizontal}
+        );
+    }
+
+    .col-5 {
+        width: calc(
+            (5 * (100% - 5 * #{$gutter-horizontal}) / 6) + 4 * #{$gutter-horizontal}
+        );
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .col-push-1 {
+        margin-left: calc(
+            ((100% - 5 * #{$gutter-horizontal}) / 6) + #{$gutter-horizontal}
+        );
+    }
+
+    .col-push-2 {
+        margin-left: calc(
+            (2 * (100% - 5 * #{$gutter-horizontal}) / 6) + 2 * #{$gutter-horizontal}
+        );
+    }
+
+    .col-push-3 {
+        margin-left: calc(
+            (3 * (100% - 5 * #{$gutter-horizontal}) / 6) + 3 * #{$gutter-horizontal}
+        );
+    }
+
+    .col-push-4 {
+        margin-left: calc(
+            (4 * (100% - 5 * #{$gutter-horizontal}) / 6) + 4 * #{$gutter-horizontal}
+        );
+    }
+
+    .col-push-5 {
+        margin-left: calc(
+            (5 * (100% - 5 * #{$gutter-horizontal}) / 6) + 5 * #{$gutter-horizontal}
+        );
+    }
+}

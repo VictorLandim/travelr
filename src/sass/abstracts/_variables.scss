@@ -1,0 +1,20 @@
+// Colors
+$color-black: #263238;
+$color-black-light: lighten($color-black, 0.2);
+$color-black-dark: darken($color-black, 0.2);
+
+$color-gray: #78909c;
+$color-gray-light: lighten($color-gray, 0.2);
+$color-gray-dark: darken($color-gray, 0.2);
+
+$color-white: #eceff1;
+
+//#212121 -> actual black
+
+// Grid
+$container-width: 114rem;
+$container-width-small: 96rem;
+$row-padding-horizontal: 1.5rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;

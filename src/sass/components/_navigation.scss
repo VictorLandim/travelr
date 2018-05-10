@@ -1,0 +1,12 @@
+.navigation {
+    display: none;
+    &__list {
+        &--left {
+            float: left;
+        }
+
+        &--right {
+            float: right;
+        }
+    }
+}
