@@ -1,23 +1,23 @@
 {
-  "name": "web-project-template",
-  "version": "1.0.0",
-  "description": "A basic web project base template.",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Victor Landim",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.6.1",
-    "express": "^4.16.3"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.24.4",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
-  }
+    "name": "web-project-template",
+    "version": "1.0.0",
+    "description": "A basic web project base template.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "gulp watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Victor Landim",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "ejs": "^2.6.1",
+        "express": "^4.16.3"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.24.4",
+        "gulp": "^3.9.1",
+        "gulp-sass": "^4.0.1"
+    }
 }

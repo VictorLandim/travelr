@@ -1,0 +1,83 @@
+.feature-card {
+    padding: 3rem;
+    background-color: $color-gray-dark;
+    text-align: center;
+    height: 30rem;
+    position: relative;
+    transition: 0.3s all;
+
+    &__content,
+    &__bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &__content {
+        height: 100%;
+    }
+
+    &__bottom {
+        background-color: $color-white;
+        color: $color-gray;
+        font-size: 2rem;
+        padding: 3.5rem;
+        transform: translateY(calc(22rem));
+        opacity: 0;
+        transition: 0.3s all;
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    &__img {
+        background-size: cover;
+        background-position: center;
+        height: 65%;
+        transition: 0.3s all;
+    }
+
+    &--one &__img {
+        background-image: linear-gradient(
+                to bottom right,
+                rgba($color-black, 0.5),
+                rgba($color-black, 0.4)
+            ),
+            url('../img/dubai-img.jpg');
+    }
+
+    &--two &__img {
+        background-image: linear-gradient(
+                to bottom right,
+                rgba($color-black, 0.5),
+                rgba($color-black, 0.4)
+            ),
+            url('../img/paris-img.jpg');
+    }
+
+    &--three &__img {
+        background-image: linear-gradient(
+                to bottom right,
+                rgba($color-black, 0.5),
+                rgba($color-black, 0.4)
+            ),
+            url('../img/tokyo-img.jpg');
+    }
+
+    &:hover &__img {
+        height: 100%;
+    }
+
+    &:hover &__title {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    &:hover &__bottom {
+        opacity: 1;
+        transform: translateY(30rem);
+    }
+}

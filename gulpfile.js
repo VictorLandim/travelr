@@ -3,19 +3,22 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
 const source = {
-    views: 'views/**/*.ejs',
+    view: 'index.html',
+    js: 'dist/js/**/*.js',
     sass: 'src/sass/**/*.scss',
     sassMain: 'src/sass/main.scss'
 };
 
 const dest = {
-    css: 'public/css/'
+    css: 'dist/css/'
 };
 
 // Static Server + watching scss/html files
 gulp.task('browser-sync', ['sass'], () => {
     browserSync.init(null, {
-        proxy: 'localhost:5000'
+        server: {
+            baseDir: './'
+        }
     });
 });
 
@@ -31,5 +34,6 @@ gulp.task('sass', () => {
 
 gulp.task('watch', ['browser-sync'], () => {
     gulp.watch(source.sass, ['sass']);
-    gulp.watch(source.views).on('change', browserSync.reload);
+    gulp.watch(source.view).on('change', browserSync.reload);
+    gulp.watch(source.js).on('change', browserSync.reload);
 });

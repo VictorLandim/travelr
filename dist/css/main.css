@@ -32,8 +32,13 @@ body {
   font-size: 2.5rem;
   text-align: center; }
 
+.heading__primary {
+  font-size: 3.4rem;
+  text-align: center;
+  color: #4a5b64; }
+
 .u-margin-bottom-xl {
-  margin-bottom: 10rem !important; }
+  margin-bottom: 12rem !important; }
 
 .u-margin-bottom-l {
   margin-bottom: 8rem !important; }
@@ -47,12 +52,73 @@ body {
 .u-margin-bottom-xs {
   margin-bottom: 1rem !important; }
 
+.u-container-skewed {
+  transform: skewY(-8deg); }
+
 .navigation {
   display: none; }
   .navigation__list--left {
     float: left; }
   .navigation__list--right {
     float: right; }
+
+.feature-card {
+  padding: 3rem;
+  background-color: #4a5b64;
+  text-align: center;
+  height: 30rem;
+  position: relative;
+  transition: 0.3s all; }
+  .feature-card__content, .feature-card__bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+  .feature-card__content {
+    height: 100%; }
+  .feature-card__bottom {
+    background-color: #eceff1;
+    color: #78909c;
+    font-size: 2rem;
+    padding: 3.5rem;
+    transform: translateY(calc(22rem));
+    opacity: 0;
+    transition: 0.3s all; }
+  .feature-card__title {
+    font-size: 3rem;
+    margin-top: 3rem; }
+  .feature-card__img {
+    background-size: cover;
+    background-position: center;
+    height: 65%;
+    transition: 0.3s all; }
+  .feature-card--one .feature-card__img {
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.5), rgba(38, 50, 56, 0.4)), url("../img/dubai-img.jpg"); }
+  .feature-card--two .feature-card__img {
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.5), rgba(38, 50, 56, 0.4)), url("../img/paris-img.jpg"); }
+  .feature-card--three .feature-card__img {
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.5), rgba(38, 50, 56, 0.4)), url("../img/tokyo-img.jpg"); }
+  .feature-card:hover .feature-card__img {
+    height: 100%; }
+  .feature-card:hover .feature-card__title {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  .feature-card:hover .feature-card__bottom {
+    opacity: 1;
+    transform: translateY(30rem); }
+
+.button--secondary {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background-color: #eceff1;
+  border: 2px solid #4a5b64;
+  color: #4a5b64;
+  font-size: 2rem;
+  transition: 0.3s all; }
+  .button--secondary:hover {
+    background-color: #4a5b64;
+    color: #eceff1; }
 
 .header {
   height: 90vh;
@@ -80,10 +146,7 @@ body {
 
 .row {
   padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  color: #eceff1;
-  font-size: 2rem;
-  text-align: center; }
+  padding-right: 1.5rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -91,9 +154,7 @@ body {
     display: table;
     clear: both; }
   .row [class^='col-'] {
-    float: left;
-    background-color: #77909c;
-    padding: 2rem; }
+    float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1 {
@@ -118,3 +179,23 @@ body {
     margin-left: calc( (4 * (100% - 5 * 6rem) / 6) + 4 * 6rem); }
   .row .col-push-5 {
     margin-left: calc( (5 * (100% - 5 * 6rem) / 6) + 5 * 6rem); }
+
+.section-features {
+  background-color: #b3c0c7;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20vh, rgba(74, 91, 100, 0.5) 80%, rgba(179, 192, 199, 0.8) 90%);
+  padding-top: 30vh;
+  margin-top: -20vh;
+  padding-bottom: 20rem;
+  position: relative;
+  overflow: hidden; }
+  .section-features::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #78909c;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewY(8deg);
+    width: 100%;
+    height: 40rem;
+    z-index: 0; }

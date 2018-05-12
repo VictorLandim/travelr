@@ -1,11 +1,11 @@
 // Colors
 $color-black: #263238;
-$color-black-light: lighten($color-black, 0.2);
-$color-black-dark: darken($color-black, 0.2);
+$color-black-light: lighten($color-black, 20%);
+$color-black-dark: darken($color-black, 20%);
 
 $color-gray: #78909c;
-$color-gray-light: lighten($color-gray, 0.2);
-$color-gray-dark: darken($color-gray, 0.2);
+$color-gray-light: lighten($color-gray, 20%);
+$color-gray-dark: darken($color-gray, 20%);
 
 $color-white: #eceff1;
 

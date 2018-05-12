@@ -18,17 +18,10 @@
         margin-bottom: $gutter-vertical;
     }
 
-    color: $color-white;
-    font-size: 2rem;
-    text-align: center;
-
     @include clearfix;
 
     [class^='col-'] {
         float: left;
-
-        background-color: $color-gray-dark;
-        padding: 2rem;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;

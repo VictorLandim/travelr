@@ -1,0 +1,78 @@
+.expand-card {
+    padding: 3rem;
+    background-color: $color-gray-dark;
+    text-align: center;
+    height: 30rem;
+    position: relative;
+    transition: 0.3s all;
+
+    & > * {
+        // transform: skew(15deg);
+    }
+
+    &__content,
+    &__bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &__content {
+        height: 100%;
+    }
+
+    &__bottom {
+        height: 8rem;
+        background-color: $color-white;
+        color: $color-gray;
+        font-size: 2rem;
+        padding-top: 2rem;
+        transform: translateY(calc(22rem));
+        opacity: 0;
+        transition: 0.3s all;
+    }
+
+    &:hover &__bottom {
+        opacity: 1;
+        transform: translateY(30rem);
+    }
+
+    &--one &__img {
+        background-image: linear-gradient(
+                to bottom right,
+                rgba($color-black, 0.5),
+                rgba($color-black, 0.4)
+            ),
+            url('../img/dubai-img.jpg');
+    }
+
+    &--two &__img {
+        background-image: linear-gradient(
+                to bottom right,
+                rgba($color-black, 0.5),
+                rgba($color-black, 0.4)
+            ),
+            url('../img/paris-img.jpg');
+    }
+
+    &__img {
+        background-size: cover;
+        background-position: center;
+        height: 65%;
+        transition: 0.3s all;
+    }
+
+    &:hover &__img {
+        height: 100%;
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    &:hover &__title {
+        opacity: 0;
+    }
+}
