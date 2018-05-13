@@ -1,6 +1,6 @@
 .feature-card {
     padding: 3rem;
-    background-color: $color-gray-dark;
+    background-color: $color-black;
     text-align: center;
     height: 30rem;
     position: relative;
@@ -50,8 +50,8 @@
     &--one &__img {
         background-image: linear-gradient(
                 to bottom right,
-                rgba($color-black, 0.5),
-                rgba($color-black, 0.4)
+                rgba($color-black, 0.3),
+                rgba($color-black, 0.2)
             ),
             url('../img/dubai-img.jpg');
     }
@@ -59,8 +59,8 @@
     &--two &__img {
         background-image: linear-gradient(
                 to bottom right,
-                rgba($color-black, 0.5),
-                rgba($color-black, 0.4)
+                rgba($color-black, 0.3),
+                rgba($color-black, 0.2)
             ),
             url('../img/paris-img.jpg');
     }
@@ -68,8 +68,8 @@
     &--three &__img {
         background-image: linear-gradient(
                 to bottom right,
-                rgba($color-black, 0.5),
-                rgba($color-black, 0.4)
+                rgba($color-black, 0.3),
+                rgba($color-black, 0.2)
             ),
             url('../img/tokyo-img.jpg');
     }

@@ -37,6 +37,13 @@ body {
   text-align: center;
   color: #4a5b64; }
 
+.heading__secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 2rem; }
+
 .u-margin-bottom-xl {
   margin-bottom: 12rem !important; }
 
@@ -52,6 +59,21 @@ body {
 .u-margin-bottom-xs {
   margin-bottom: 1rem !important; }
 
+.u-margin-top-xl {
+  margin-top: 12rem !important; }
+
+.u-margin-top-l {
+  margin-top: 8rem !important; }
+
+.u-margin-top-m {
+  margin-top: 4rem !important; }
+
+.u-margin-top-s {
+  margin-top: 2rem !important; }
+
+.u-margin-top-xs {
+  margin-top: 1rem !important; }
+
 .u-container-skewed {
   transform: skewY(-8deg); }
 
@@ -64,7 +86,7 @@ body {
 
 .feature-card {
   padding: 3rem;
-  background-color: #4a5b64;
+  background-color: #263238;
   text-align: center;
   height: 30rem;
   position: relative;
@@ -98,11 +120,11 @@ body {
     transition: 0.3s all;
     transform: rotate(4deg) scale(1.15); }
   .feature-card--one .feature-card__img {
-    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.5), rgba(38, 50, 56, 0.4)), url("../img/dubai-img.jpg"); }
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/dubai-img.jpg"); }
   .feature-card--two .feature-card__img {
-    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.5), rgba(38, 50, 56, 0.4)), url("../img/paris-img.jpg"); }
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/paris-img.jpg"); }
   .feature-card--three .feature-card__img {
-    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.5), rgba(38, 50, 56, 0.4)), url("../img/tokyo-img.jpg"); }
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/tokyo-img.jpg"); }
   .feature-card:hover .feature-card__img-box {
     height: 100%; }
   .feature-card:hover .feature-card__title {
@@ -125,8 +147,29 @@ body {
     background-color: #4a5b64;
     color: #eceff1; }
 
+.introduction-block {
+  height: 100%;
+  background-image: url("../img/rainbow-bridge-img-2.jpg");
+  background-size: cover;
+  background-position: 90%;
+  clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%); }
+  .introduction-block__box {
+    width: 60%;
+    float: right;
+    height: 100%;
+    background-color: rgba(38, 50, 56, 0.95);
+    padding-top: 10rem;
+    padding-left: 5rem;
+    position: relative; }
+  .introduction-block__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45%; }
+
 .header {
-  height: 90vh;
+  height: 95vh;
   position: relative; }
   .header__content {
     height: 100%;
@@ -196,9 +239,15 @@ body {
   .row .col-push-5 {
     margin-left: calc( (5 * (100% - 5 * 6rem) / 6) + 5 * 6rem); }
 
+.section-introduction {
+  position: relative;
+  height: 95vh;
+  padding-top: 4rem;
+  background: linear-gradient(to bottom, #eceff1, #b3c0c7, #eceff1); }
+
 .section-features {
   background-color: #b3c0c7;
-  background: linear-gradient(to bottom, #eceff1 0%, #eceff1 20%, #78909c 80%, #b3c0c7 90%);
+  background: linear-gradient(to bottom, #eceff1 0%, #eceff1 10%, #b3c0c7 40%);
   padding-top: 10rem;
   padding-bottom: 20rem;
   position: relative;

@@ -1,0 +1,23 @@
+.introduction-block {
+    height: 100%;
+    background-image: url('../img/rainbow-bridge-img-2.jpg');
+    background-size: cover;
+    background-position: 90%;
+    // transform: rotate(-8deg) scale(1.2);
+    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+
+    &__box {
+        width: 60%;
+        float: right;
+        height: 100%;
+        background-color: rgba($color-black, 0.95);
+        padding-top: 10rem;
+        padding-left: 5rem;
+        position: relative;
+    }
+
+    &__content {
+        @include absPosition;
+        top: 45%;
+    }
+}

@@ -1,13 +1,23 @@
+.section-introduction {
+    position: relative;
+    height: 95vh;
+    padding-top: 4rem;
+    background: linear-gradient(
+        to bottom,
+        $color-white,
+        $color-gray-light,
+        $color-white
+    );
+}
 .section-features {
     background-color: $color-gray-light;
     background: linear-gradient(
         to bottom,
         $color-white 0%,
-        $color-white 20%,
-        $color-gray 80%,
-        $color-gray-light 90%
+        $color-white 10%,
+        $color-gray-light 40%
     );
-    padding-top: 10rem;
+    padding-top: 10rem; // margin-top: 25rem;
     padding-bottom: 20rem;
     position: relative;
     overflow: hidden;
