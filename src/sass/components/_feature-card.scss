@@ -23,7 +23,7 @@
         color: $color-gray;
         font-size: 2rem;
         padding: 3.5rem;
-        transform: translateY(calc(22rem));
+        transform: translateY(22rem);
         opacity: 0;
         transition: 0.3s all;
     }
@@ -33,11 +33,18 @@
         margin-top: 3rem;
     }
 
+    &__img-box {
+        height: 65%;
+        overflow: hidden;
+        transition: 0.3s all;
+    }
+
     &__img {
+        height: 100%;
         background-size: cover;
         background-position: center;
-        height: 65%;
         transition: 0.3s all;
+        transform: rotate(4deg) scale(1.15);
     }
 
     &--one &__img {
@@ -67,7 +74,7 @@
             url('../img/tokyo-img.jpg');
     }
 
-    &:hover &__img {
+    &:hover &__img-box {
         height: 100%;
     }
 
