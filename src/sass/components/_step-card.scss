@@ -1,0 +1,35 @@
+.step-card {
+    height: 40rem;
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid $color-black-light;
+    position: relative;
+    padding: 5rem;
+    padding-top: 9rem;
+    transform: skewY(-8deg);
+
+    &__number {
+        color: $color-black;
+        position: absolute;
+        top: -6rem;
+        left: 2rem;
+        font-size: 10rem;
+    }
+
+    &__content {
+        color: $color-gray-dark;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -3rem;
+        left: -3rem;
+        width: 100%;
+        height: 100%;
+        border: 5px solid $color-gray-light;
+        // background-image: url('../img/budapest-img.jpg');
+        // background-size: cover;
+        // opacity: 0.2;
+    }
+}

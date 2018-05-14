@@ -34,3 +34,13 @@
         z-index: 0;
     }
 }
+.section-steps {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: linear-gradient(
+        to bottom,
+        $color-white,
+        $color-white-dark,
+        $color-white
+    );
+}

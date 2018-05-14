@@ -3,14 +3,17 @@
     }
 
     &--secondary {
-        display: block;
-        padding: 1rem 2rem;
-        text-decoration: none;
-        background-color: $color-white;
-        border: 2px solid $color-gray-dark;
-        color: $color-gray-dark;
-        font-size: 2rem;
-        transition: 0.3s all;
+        &:link,
+        &:visited {
+            display: block;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            background-color: $color-white;
+            border: 2px solid $color-gray-dark;
+            color: $color-gray-dark;
+            font-size: 2rem;
+            transition: 0.3s all;
+        }
 
         &:hover {
             background-color: $color-gray-dark;

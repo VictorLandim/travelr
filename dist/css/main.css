@@ -1,3 +1,11 @@
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(10rem); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::before,
 *::after {
@@ -13,24 +21,25 @@ body {
 
 ::selection {
   background-color: #78909c;
-  color: #eceff1; }
+  color: #fefefe; }
 
 body {
-  font-family: 'Noto Serif', serif;
-  font-family: 'Libre Baskerville', serif;
-  font-family: 'Lora', serif;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Libre Baskerville', sans-serif;
   font-weight: 300;
-  color: #eceff1; }
+  color: #fefefe; }
 
 .heading__main {
   font-size: 9rem;
-  border-bottom: 2px solid #eceff1;
-  text-align: center; }
+  border-bottom: 2px solid #fefefe;
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif; }
 
 .heading__main-sub {
   font-size: 2.5rem;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif; }
 
 .heading__primary {
   font-size: 3.4rem;
@@ -38,11 +47,26 @@ body {
   color: #4a5b64; }
 
 .heading__secondary {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 2rem; }
+  font-size: 1.9rem;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 100; }
+
+.u-align-center {
+  text-align: center; }
+
+.u-align-left {
+  text-align: left; }
+
+.u-padding-horizontal {
+  padding-left: 4rem;
+  padding-right: 4rem; }
+
+.u-margin-bottom-xxl {
+  margin-bottom: 15rem !important; }
 
 .u-margin-bottom-xl {
   margin-bottom: 12rem !important; }
@@ -74,8 +98,18 @@ body {
 .u-margin-top-xs {
   margin-top: 1rem !important; }
 
-.u-container-skewed {
+.u-container-skewed-left {
   transform: skewY(-8deg); }
+
+.u-container-skewed-right {
+  transform: skewY(8deg); }
+
+.u-container-rotated {
+  transform: rotate(-8deg); }
+
+.u-anim-fadeInBottom {
+  animation: 0.8s fadeInBottom;
+  backface-visibility: hidden; }
 
 .navigation {
   display: none; }
@@ -99,7 +133,7 @@ body {
   .feature-card__content {
     height: 100%; }
   .feature-card__bottom {
-    background-color: #eceff1;
+    background-color: #fefefe;
     color: #78909c;
     font-size: 2rem;
     padding: 3.5rem;
@@ -108,7 +142,8 @@ body {
     transition: 0.3s all; }
   .feature-card__title {
     font-size: 3rem;
-    margin-top: 3rem; }
+    height: 35%;
+    padding-top: 3.1rem; }
   .feature-card__img-box {
     height: 65%;
     overflow: hidden;
@@ -117,14 +152,17 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     transition: 0.3s all;
     transform: rotate(4deg) scale(1.15); }
   .feature-card--one .feature-card__img {
-    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/dubai-img.jpg"); }
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/istanbul-img.jpg"); }
   .feature-card--two .feature-card__img {
-    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/paris-img.jpg"); }
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/singapore-img.jpg"); }
   .feature-card--three .feature-card__img {
-    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/tokyo-img.jpg"); }
+    background-image: linear-gradient(to bottom right, rgba(38, 50, 56, 0.3), rgba(38, 50, 56, 0.2)), url("../img/budapest-img.jpg");
+    background-position-y: 1.5rem;
+    transform: rotate(4deg) scale(1.3); }
   .feature-card:hover .feature-card__img-box {
     height: 100%; }
   .feature-card:hover .feature-card__title {
@@ -134,24 +172,51 @@ body {
     opacity: 1;
     transform: translateY(30rem); }
 
-.button--secondary {
+.step-card {
+  height: 40rem;
+  width: 90%;
+  margin: 0 auto;
+  border: 5px solid #304047;
+  position: relative;
+  padding: 5rem;
+  padding-top: 9rem;
+  transform: skewY(-8deg); }
+  .step-card__number {
+    color: #263238;
+    position: absolute;
+    top: -6rem;
+    left: 2rem;
+    font-size: 10rem; }
+  .step-card__content {
+    color: #4a5b64; }
+  .step-card::before {
+    content: '';
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #b3c0c7; }
+
+.button--secondary:link, .button--secondary:visited {
   display: block;
   padding: 1rem 2rem;
   text-decoration: none;
-  background-color: #eceff1;
+  background-color: #fefefe;
   border: 2px solid #4a5b64;
   color: #4a5b64;
   font-size: 2rem;
   transition: 0.3s all; }
-  .button--secondary:hover {
-    background-color: #4a5b64;
-    color: #eceff1; }
+
+.button--secondary:hover {
+  background-color: #4a5b64;
+  color: #fefefe; }
 
 .introduction-block {
   height: 100%;
-  background-image: url("../img/rainbow-bridge-img-2.jpg");
+  background-image: url("../img/rainbow-bridge-img.jpg");
   background-size: cover;
-  background-position: 90%;
+  background-position: 100%;
   clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%); }
   .introduction-block__box {
     width: 60%;
@@ -191,7 +256,7 @@ body {
     display: block;
     width: 100%;
     height: 20%;
-    background: linear-gradient(to bottom, #b3c0c7 0%, #b3c0c7 10%, #eceff1); }
+    background: linear-gradient(to bottom, #b3c0c7 0%, #b3c0c7 10%, #fefefe); }
 
 .container {
   max-width: 114rem;
@@ -243,11 +308,11 @@ body {
   position: relative;
   height: 95vh;
   padding-top: 4rem;
-  background: linear-gradient(to bottom, #eceff1, #b3c0c7, #eceff1); }
+  background: linear-gradient(to bottom, #fefefe, #b3c0c7, #fefefe); }
 
 .section-features {
   background-color: #b3c0c7;
-  background: linear-gradient(to bottom, #eceff1 0%, #eceff1 10%, #b3c0c7 40%);
+  background: linear-gradient(to bottom, #fefefe 0%, #fefefe 10%, #b3c0c7 40%);
   padding-top: 10rem;
   padding-bottom: 20rem;
   position: relative;
@@ -263,3 +328,8 @@ body {
     width: 100%;
     height: 40rem;
     z-index: 0; }
+
+.section-steps {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(to bottom, #fefefe, #eceff1, #fefefe); }

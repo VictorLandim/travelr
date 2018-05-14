@@ -1,3 +1,23 @@
+.u-align-center {
+    text-align: center;
+}
+
+.u-align-left {
+    text-align: left;
+}
+
+.u-padding-vertical {
+}
+
+.u-padding-horizontal {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.u-margin-bottom-xxl {
+    margin-bottom: 15rem !important;
+}
+
 .u-margin-bottom-xl {
     margin-bottom: 12rem !important;
 }
@@ -38,6 +58,19 @@
     margin-top: 1rem !important;
 }
 
-.u-container-skewed {
+.u-container-skewed-left {
     transform: skewY(-8deg);
+}
+
+.u-container-skewed-right {
+    transform: skewY(8deg);
+}
+
+.u-container-rotated {
+    transform: rotate(-8deg);
+}
+
+.u-anim-fadeInBottom {
+    animation: 0.8s fadeInBottom;
+    backface-visibility: hidden;
 }

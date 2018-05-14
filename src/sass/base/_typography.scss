@@ -1,8 +1,7 @@
 body {
-    font-family: 'Noto Serif', serif;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Lora', serif;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Noto Serif', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Libre Baskerville', sans-serif;
     font-weight: 300;
     color: $color-white;
 }
@@ -12,11 +11,13 @@ body {
         font-size: 9rem;
         border-bottom: 2px solid $color-white;
         text-align: center;
+        font-family: 'Playfair Display', sans-serif;
     }
 
     &__main-sub {
         font-size: 2.5rem;
         text-align: center;
+        font-family: 'Playfair Display', sans-serif;
     }
 
     &__primary {
@@ -26,11 +27,13 @@ body {
     }
 
     &__secondary {
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-transform: uppercase;
     }
 }
 
 .paragraph {
-    font-size: 2rem;
+    font-size: 1.9rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 100;
 }
