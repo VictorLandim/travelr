@@ -1,3 +1,4 @@
-# Web project template
 
-Basic project template for express js + sass app.
+Simple travel agency styled landing page. Incomplete :[
+
+Live at http://victorlandim.com/travelr/
